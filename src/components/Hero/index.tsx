@@ -6,7 +6,7 @@ export const Hero = () => {
           Hi.
         </span>{" "}
         <br /> I love learning, pretty much{" "}
-        <span className="italic">anything</span>
+        <span className="italic">everything</span>
       </div>
     </main>
   );
