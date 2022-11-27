@@ -14,8 +14,8 @@ import { useKeyPressEvent } from "react-use";
 const quickActions = [
   { name: "Home", icon: ArrowUpRightIcon, shortcut: "", url: "/" },
   { name: "Blog Posts", icon: ArrowUpRightIcon, shortcut: "", url: "/docs" },
-  { name: "Next Track", icon: ForwardIcon, shortcut: "→", url: "#" },
-  { name: "Previous Track", icon: BackwardIcon, shortcut: "←", url: "#" },
+  { name: "Next Track", icon: ForwardIcon, shortcut: "", url: "#" },
+  { name: "Previous Track", icon: BackwardIcon, shortcut: "", url: "#" },
   {
     name: "Increase Volume",
     icon: SpeakerWaveIcon,
@@ -171,6 +171,7 @@ export const CommandPalette = () => {
                                     {action.name}
                                   </span>
                                   <span className="text-md ml-3 flex-none font-semibold text-gray-500">
+                                    {/* TODO: fix the shortcut alignment issue */}
                                     {action.shortcut !== "" && (
                                       <>
                                         <kbd className="font-sans">⌘</kbd>
