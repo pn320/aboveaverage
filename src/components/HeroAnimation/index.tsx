@@ -7,9 +7,11 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 
 // eslint-disable-next-line no-var
 var radius;
+let numLines = 0;
 
 export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
   const setup = (p5: p5Types, canvasParentRef: Element) => {
+    numLines = 0;
     p5.createCanvas(window.innerWidth, window.innerHeight).parent(
       canvasParentRef
     );
@@ -29,6 +31,10 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
 
     // draw a line between them
     p5.line(xpos1, ypos1, xpos2, ypos2);
+    numLines += 1;
+    if (numLines >= 2000) {
+      p5.setup();
+    }
   };
 
   const windowResize = (p5: p5Types) => {
