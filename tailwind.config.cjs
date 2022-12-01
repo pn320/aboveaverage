@@ -11,10 +11,9 @@ module.exports = {
       },
       animation: {
         fadein: "fadein 1s ease-in",
+        fadeinslow: "fadein 7s ease-in",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };

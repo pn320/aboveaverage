@@ -24,12 +24,10 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
     const xpos1 = window.innerWidth / 2 + radius * Math.cos(angle1);
     const ypos1 = window.innerHeight / 2 + radius * Math.sin(angle1);
 
-    // find another random point on the circle
     const angle2 = Math.random() * (2 * Math.PI);
     const xpos2 = window.innerWidth / 2 + radius * Math.cos(angle2);
     const ypos2 = window.innerHeight / 2 + radius * Math.sin(angle2);
 
-    // draw a line between them
     p5.line(xpos1, ypos1, xpos2, ypos2);
     numLines += 1;
     if (numLines >= 4000) {

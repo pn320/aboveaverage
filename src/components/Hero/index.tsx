@@ -7,6 +7,12 @@ export const Hero = () => {
         </span>{" "}
         <br /> I love learning, pretty much{" "}
         <span className="italic">everything</span>
+        <br />
+        <br />
+        <span className="animate-fadeinslow text-gray-500 md:text-lg lg:text-xl">
+          Press <kbd className="font-sans">⌘</kbd>
+          <kbd className="font-sans">K</kbd> to move around quick
+        </span>
       </div>
     </main>
   );
