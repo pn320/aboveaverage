@@ -32,7 +32,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
     // draw a line between them
     p5.line(xpos1, ypos1, xpos2, ypos2);
     numLines += 1;
-    if (numLines >= 3000) {
+    if (numLines >= 4000) {
       p5.setup();
     }
   };
@@ -44,7 +44,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
 
   return (
     <Sketch
-      className={"fixed left-0 top-0"}
+      className={"absolute left-0 top-0"}
       setup={setup}
       draw={draw}
       windowResized={windowResize}
