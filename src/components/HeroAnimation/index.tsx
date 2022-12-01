@@ -12,7 +12,7 @@ let numLines = 0;
 export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
   const setup = (p5: p5Types, canvasParentRef: Element) => {
     numLines = 0;
-    p5.createCanvas(window.innerWidth, window.innerHeight).parent(
+    p5.createCanvas(0.95 * window.innerWidth, 0.95 * window.innerHeight).parent(
       canvasParentRef
     );
     p5.stroke(0, 0, 0, 15);
@@ -32,7 +32,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
     // draw a line between them
     p5.line(xpos1, ypos1, xpos2, ypos2);
     numLines += 1;
-    if (numLines >= 2000) {
+    if (numLines >= 3000) {
       p5.setup();
     }
   };
@@ -44,7 +44,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
 
   return (
     <Sketch
-      className={"absolute left-0 top-0"}
+      className={"fixed left-0 top-0"}
       setup={setup}
       draw={draw}
       windowResized={windowResize}
