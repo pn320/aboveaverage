@@ -9,10 +9,10 @@ export const Hero = () => {
         <span className="italic">everything</span>
         <br />
         <br />
-        <span className="animate-fadeinslow text-gray-500 md:text-lg lg:text-xl">
+        {/* <span className="animate-fadeinslow text-gray-500 md:text-lg lg:text-xl">
           Press <kbd className="font-sans">⌘</kbd>
           <kbd className="font-sans">K</kbd> to move around quick
-        </span>
+        </span> */}
       </div>
     </main>
   );

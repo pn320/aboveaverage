@@ -226,10 +226,10 @@ export const CommandPalette = () => {
                       Help with searching
                     </p>
                     <p className="mt-2 text-gray-500">
-                      Use this tool to quickly search for users and projects
-                      across our entire platform. You can also use the search
-                      modifiers found in the footer below to limit the results
-                      to just users or projects.
+                      Use this to get around quickly around the page. You can
+                      look up commands, blog posts, and specific pages on the
+                      website. To look for blog posts just type the post name or
+                      &gt; and continue typing to filter from all of them!
                     </p>
                   </div>
                 )}
