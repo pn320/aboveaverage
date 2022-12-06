@@ -23,7 +23,7 @@ const pages = [
     id: 2,
     name: "Blog Posts",
     category: "Pages",
-    url: "/docs",
+    url: "/blog",
   },
 ];
 
@@ -129,7 +129,7 @@ export const CommandPalette = () => {
                   <Combobox.Input
                     className="h-12 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
                     placeholder="Start typing to search"
-                    autoComplete="false"
+                    autoComplete="off"
                     onChange={(event) => setRawQuery(event.target.value)}
                   />
                 </div>
@@ -259,7 +259,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery.startsWith("#")
-                        ? "border-teal-700 font-extrabold text-teal-700"
+                        ? "border-pink-700 font-extrabold text-pink-700"
                         : "border-gray-400 text-gray-900"
                     )}
                   >
@@ -271,7 +271,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery.startsWith(">")
-                        ? "border-teal-700 font-extrabold text-teal-700"
+                        ? "border-pink-700 font-extrabold text-pink-700"
                         : "border-gray-400 text-gray-900"
                     )}
                   >
@@ -282,7 +282,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery === "?"
-                        ? "border-teal-700 font-extrabold text-teal-700"
+                        ? "border-pink-700 font-extrabold text-pink-700"
                         : "border-gray-400 text-gray-900"
                     )}
                   >
