@@ -9,6 +9,7 @@ import {
   SpeakerWaveIcon,
   SpeakerXMarkIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/router";
 import { Fragment, useState } from "react";
 import { useKeyPressEvent } from "react-use";
 
@@ -28,14 +29,29 @@ const pages = [
 ];
 
 const commands = [
-  { id: 1, name: "Next Track", icon: ForwardIcon, shortcut: "", url: "#" },
-  { id: 2, name: "Previous Track", icon: BackwardIcon, shortcut: "", url: "#" },
+  {
+    id: 1,
+    name: "Next Track",
+    icon: ForwardIcon,
+    shortcut: "",
+    url: "#",
+    action: "",
+  },
+  {
+    id: 2,
+    name: "Previous Track",
+    icon: BackwardIcon,
+    shortcut: "",
+    url: "#",
+    action: "",
+  },
   {
     id: 3,
     name: "Increase Volume",
     icon: SpeakerWaveIcon,
     shortcut: "",
     url: "#",
+    action: "",
   },
   {
     id: 4,
@@ -43,6 +59,7 @@ const commands = [
     icon: SpeakerWaveIcon,
     shortcut: "",
     url: "#",
+    action: "",
   },
   {
     id: 5,
@@ -50,6 +67,7 @@ const commands = [
     icon: SpeakerXMarkIcon,
     shortcut: "M",
     url: "#",
+    action: "",
   },
 ];
 
@@ -60,6 +78,13 @@ function classNames(...classes: (string | boolean)[]) {
 export const CommandPalette = () => {
   const [open, setOpen] = useState(false);
   const [rawQuery, setRawQuery] = useState("");
+  const router = useRouter();
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const change = (item: any) => {
+    router.push(item.url);
+    setOpen(false);
+  };
 
   const query = rawQuery.toLowerCase().replace(/^[#>]/, "");
 
@@ -120,7 +145,7 @@ export const CommandPalette = () => {
           >
             <Dialog.Panel className="mx-auto max-w-2xl transform divide-y divide-gray-500 divide-opacity-10 overflow-hidden rounded-xl bg-white bg-opacity-80 shadow-2xl ring-1 ring-black ring-opacity-5 backdrop-blur backdrop-filter transition-all">
               {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-              <Combobox onChange={(item: any) => (window.location = item.url)}>
+              <Combobox onChange={(item: any) => change(item)}>
                 <div className="relative">
                   <MagnifyingGlassIcon
                     className="pointer-events-none absolute top-3.5 left-4 h-5 w-5 text-gray-900 text-opacity-40"
