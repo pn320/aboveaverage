@@ -25,7 +25,7 @@ export default function FourOhFour() {
               <div className="mt-10 flex justify-center">
                 <Link
                   href="/"
-                  className="ml-0 text-lg font-normal text-gray-600 hover:text-red-900 lg:-ml-[6rem]"
+                  className="ml-0 text-lg font-normal text-gray-600 hover:text-red-900 sm:text-sm lg:-ml-[6rem]"
                 >
                   Go back home
                 </Link>
