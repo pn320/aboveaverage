@@ -145,10 +145,10 @@ export const CommandPalette = () => {
                           Pages
                         </h2>
                         <ul className="-mx-2 mt-2 text-sm text-gray-700">
-                          {filteredPages.map((project) => (
+                          {filteredPages.map((page) => (
                             <Combobox.Option
-                              key={project.id}
-                              value={project}
+                              key={page.id}
+                              value={page}
                               className={({ active }) =>
                                 classNames(
                                   "flex cursor-default select-none items-center rounded-lg px-3 py-2",
@@ -167,7 +167,7 @@ export const CommandPalette = () => {
                                     aria-hidden="true"
                                   />
                                   <span className="ml-3 flex-auto truncate">
-                                    {project.name}
+                                    {page.name}
                                   </span>
                                 </>
                               )}

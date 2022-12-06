@@ -7,7 +7,7 @@ export default function FourOhFour() {
       <Head>
         <title>AboveAverage | Not Found</title>
       </Head>
-      <div className="relative z-[2] grid min-h-screen place-items-center px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <div className="relative z-[2] animate-fadein grid min-h-screen place-items-center px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-max">
           <main className="sm:flex">
             <p className="mt-3 text-4xl font-bold tracking-tight text-red-900 sm:text-5xl">
@@ -25,7 +25,7 @@ export default function FourOhFour() {
               <div className="mt-10 flex justify-center">
                 <Link
                   href="/"
-                  className="ml-0 text-lg font-normal text-gray-600 hover:text-red-900 sm:text-sm lg:-ml-[6rem]"
+                  className="sm:text-md ml-0 text-lg font-normal text-gray-600 hover:text-red-900 lg:-ml-[6rem]"
                 >
                   Go back home
                 </Link>
