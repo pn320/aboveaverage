@@ -13,6 +13,9 @@ module.exports = {
         fadein: "fadein 1s ease-in",
         fadeinslow: "fadein 7s ease-in",
       },
+      fontFamily: {
+        mono: ["Jetbrains Mono"],
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
