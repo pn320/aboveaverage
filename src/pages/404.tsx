@@ -21,7 +21,7 @@ export default function FourOhFour() {
                   Page not found
                 </h1>
                 <p className="mt-1 text-base text-gray-500">
-                  Please check the URL in the address bar and try again (if you were redirected here, I'm probably working on it!).
+                  Please check the URL in the address bar and try again (if you were redirected here, I&apos;m probably working on it!).
                 </p>
               </div>
               <div className="mt-10 flex justify-center">
