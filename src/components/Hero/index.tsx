@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <main className="relative z-[2] grid min-h-screen animate-fadein place-content-center">
+    <div className="relative z-[2] grid min-h-screen animate-fadein place-content-center">
       <div className="text-center font-sans text-lg font-light md:text-xl lg:text-2xl">
         <span className="text-7xl font-normal tracking-tight md:text-8xl lg:text-9xl ">
           <span className="text-red-900">Hi</span>.
@@ -17,7 +17,7 @@ export const Hero = () => {
             opacity: [0, 1],
           }}
           transition={{
-            delay: 3,
+            delay: 1.5,
             duration: 1,
           }}
         >
@@ -26,6 +26,6 @@ export const Hero = () => {
           around quick
         </motion.span>
       </div>
-    </main>
+    </div>
   );
 };

@@ -251,10 +251,10 @@ export const CommandPalette = () => {
                       Help with searching
                     </p>
                     <p className="mt-2 text-gray-500">
-                      Use this to get around quickly around the page. You can
+                      Use this to get around quickly around the site. You can
                       look up commands, blog posts, and specific pages on the
                       website. To look for blog posts just type the post name or
-                      &gt; and continue typing to filter from all of them!
+                      # and continue typing to filter from all of them!
                     </p>
                   </div>
                 )}
@@ -284,7 +284,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery.startsWith("#")
-                        ? "border-pink-700 font-extrabold text-pink-700"
+                        ? "border-red-900 font-extrabold text-red-900"
                         : "border-gray-400 text-gray-900"
                     )}
                   >
@@ -296,7 +296,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery.startsWith(">")
-                        ? "border-pink-700 font-extrabold text-pink-700"
+                        ? "border-red-900 font-extrabold text-red-900"
                         : "border-gray-400 text-gray-900"
                     )}
                   >
@@ -307,7 +307,7 @@ export const CommandPalette = () => {
                     className={classNames(
                       "mx-1 flex h-5 w-5 items-center justify-center rounded border bg-white sm:mx-2",
                       rawQuery === "?"
-                        ? "border-pink-700 font-extrabold text-pink-700"
+                        ? "border-red-900 font-extrabold text-red-900"
                         : "border-gray-400 text-gray-900"
                     )}
                   >

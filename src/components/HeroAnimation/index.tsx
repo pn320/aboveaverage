@@ -30,7 +30,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
 
     p5.line(xpos1, ypos1, xpos2, ypos2);
     numLines += 1;
-    if (numLines >= 4000) {
+    if (numLines >= 3000) {
       p5.setup();
     }
   };

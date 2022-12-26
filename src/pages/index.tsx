@@ -10,9 +10,11 @@ const Home: NextPage = () => {
       <Head>
         <title>AboveAverage</title>
       </Head>
-      <Hero />
-      <HeroAnimation />
-      <LandingSection />
+      <main className="overflow-hidden">
+        <Hero />
+        <HeroAnimation />
+        <LandingSection />
+      </main>
     </>
   );
 };
