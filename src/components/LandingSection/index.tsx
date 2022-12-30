@@ -6,7 +6,7 @@ export const LandingSection = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="relative z-[2] -mt-12 flex h-screen justify-center text-center md:mt-8 lg:mt-12 ">
+    <div className="relative z-[2] -mt-12 mb-6 flex h-max justify-center text-center md:mt-8 lg:mt-12">
       <motion.div
         ref={ref}
         style={{
