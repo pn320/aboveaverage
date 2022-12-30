@@ -9,10 +9,8 @@ export const Hero = () => {
         </span>{" "}
         <br /> I love learning, pretty much{" "}
         <span className="italic">everything</span>
-        <br />
-        <br />
         <motion.span
-          className="text-gray-700 md:text-lg lg:text-xl"
+          className="block text-sm text-gray-700 sm:mt-3 md:text-lg lg:mt-4 lg:text-xl"
           animate={{
             opacity: [0, 1],
           }}

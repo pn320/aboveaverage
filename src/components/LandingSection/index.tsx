@@ -6,7 +6,7 @@ export const LandingSection = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="relative z-[2] flex h-screen justify-center text-center">
+    <div className="relative z-[2] -mt-12 flex h-screen justify-center text-center md:mt-8 lg:mt-12 ">
       <motion.div
         ref={ref}
         style={{
@@ -14,7 +14,7 @@ export const LandingSection = () => {
           opacity: isInView ? 1 : 0,
           transition: "all 1s ease 0.1s",
         }}
-        className="font-sans font-light tracking-tight sm:w-2/4 sm:pl-0 sm:mx-2 sm:-mt-12 lg:mx-0 lg:mt-4 sm:text-lg md:w-3/5 lg:pl-1 lg:text-xl"
+        className="font-sans font-light tracking-tight sm:mx-2 sm:w-2/4 sm:pl-0 sm:text-lg md:w-3/5 lg:mx-0 lg:pl-1 lg:text-xl"
       >
         I&apos;m Prakhar Nagpal. I&apos;m a final year Computing student at
         Imperial College London. I interned as a{" "}

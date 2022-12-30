@@ -42,7 +42,7 @@ export const HeroAnimation: React.FC<Record<string, unknown>> = ({}) => {
 
   return (
     <Sketch
-      className={"absolute left-0 top-0"}
+      className={"absolute left-0 top-6"}
       setup={setup}
       draw={draw}
       windowResized={windowResize}
